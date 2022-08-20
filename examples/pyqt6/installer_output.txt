@@ -1,0 +1,7 @@
+...
+
+---------------------------------------------
+C:\data\gits_temp\pynsist\examples\pyqt5\build\nsis\Python>python "..\List_App_(PyQt5).launch.pyw"
+
+==> Works ...
+

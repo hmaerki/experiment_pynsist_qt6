@@ -1,0 +1,35 @@
+PS C:\data\gits_temp\pynsist\examples\pyqt5> pynsist.exe .\installer.cfg
+Unpacking Python...
+Copying packages into build directory...
+Using cached wheel: C:\Users\maerki\AppData\Local\pynsist\pypi\pyqt5\5.15.6\PyQt5-5.15.6-cp36-abi3-win_amd64.whl
+Using cached wheel: C:\Users\maerki\AppData\Local\pynsist\pypi\pyqt5-qt5\5.15.2\PyQt5_Qt5-5.15.2-py3-none-win_amd64.whl
+Downloading wheel: https://files.pythonhosted.org/packages/26/49/fcc959728ea3a9b556b105259dd49519b62137776f15a98f9012eb5758a4/PyQt5_sip-12.9.0-cp38-cp38-win_amd64.whl
+Writing NSI file to build\nsis\installer.nsi
+
+~~~ Running makensis ~~~
+Processing config: C:\Program Files (x86)\NSIS\nsisconf.nsh
+Processing script file: "build\nsis\installer.nsi" (ACP)
+
+Processed 1 file, writing output (x86-unicode):
+
+Output: "C:\data\gits_temp\pynsist\examples\pyqt5\build\nsis\List_App_(PyQt5)_1.0.exe"
+Install: 5 pages (320 bytes), 2 sections (2 required) (4144 bytes), 3479 instructions (97412 bytes), 2561 strings (101342 bytes), 1 language table (322 bytes).
+Uninstall: 1 page (128 bytes), 1 section (2072 bytes), 175 instructions (4900 bytes), 105 strings (2998 bytes), 1 language table (198 bytes).
+Datablock optimizer saved 73855 bytes (~0.1%).
+
+Using lzma compression.
+
+EXE header size:              178176 / 38400 bytes
+Install code:                  26166 / 204004 bytes
+Install data:               52854592 / 166784858 bytes
+Uninstall code+data:           64594 / 143859 bytes
+CRC (0x96A9C5FB):                  4 / 4 bytes
+
+Total size:                 53123532 / 167171125 bytes (31.7%)
+Installer written to build\nsis\List_App_(PyQt5)_1.0.exe
+
+---------------------------------------------
+C:\data\gits_temp\pynsist\examples\pyqt5\build\nsis\Python>python "..\List_App_(PyQt5).launch.pyw"
+
+==> Works ok
+

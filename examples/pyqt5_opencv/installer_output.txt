@@ -1,0 +1,40 @@
+pynsist.exe .\installer.cfg 
+Unpacking Python...
+Copying packages into build directory...
+Using cached wheel: C:\Users\maerki\AppData\Local\pynsist\pypi\PyQt5\5.15.7\PyQt5-5.15.7-cp37-abi3-win_amd64.whl
+Using cached wheel: C:\Users\maerki\AppData\Local\pynsist\pypi\sip\6.6.2\sip-6.6.2-cp37-abi3-win_amd64.whl
+Using cached wheel: C:\Users\maerki\AppData\Local\pynsist\pypi\numpy\1.23.2\numpy-1.23.2-cp38-cp38-win_amd64.whl
+Using cached wheel: C:\Users\maerki\AppData\Local\pynsist\pypi\opencv-python\4.6.0.66\opencv_python-4.6.0.66-cp36-abi3-win_amd64.whl
+Writing NSI file to build\nsis\installer.nsi
+
+~~~ Running makensis ~~~
+Processing config: C:\Program Files (x86)\NSIS\nsisconf.nsh
+Processing script file: "build\nsis\installer.nsi" (ACP)
+
+Processed 1 file, writing output (x86-unicode):
+
+Output: "C:\data\gits_temp\pynsist\examples\pyqt5_opencv\build\nsis\Camera_App_(PyQt5)_1.0.exe"
+Install: 5 pages (320 bytes), 2 sections (2 required) (4144 bytes), 2901 instructions (81228 bytes), 2156 strings (79514 bytes), 1 language table (322 bytes).
+Uninstall: 1 page (128 bytes), 1 section (2072 bytes), 175 instructions (4900 bytes), 105 strings (3014 bytes), 1 language table (198 bytes).
+Datablock optimizer saved 147891 bytes (~0.3%).
+
+Using lzma compression.
+
+EXE header size:              178176 / 38400 bytes
+Install code:                  22846 / 165992 bytes
+Install data:               45438104 / 201473884 bytes
+Uninstall code+data:           64591 / 143856 bytes
+CRC (0x9C5990D4):                  4 / 4 bytes
+
+Total size:                 45703721 / 201822136 bytes (22.6%)
+Installer written to build\nsis\Camera_App_(PyQt5)_1.0.exe
+
+
+---------------------------------------
+C:\data\gits_temp\pynsist\examples\pyqt5_opencv\build\nsis\Python>python "..\Camera_App_(PyQt5).launch.pyw"
+Traceback (most recent call last):
+  File "..\Camera_App_(PyQt5).launch.pyw", line 34, in <module>
+    from app.main import main
+  File "C:\data\gits_temp\pynsist\examples\pyqt5_opencv\build\nsis\pkgs\app\main.py", line 3, in <module>
+    from PyQt5.QtCore import pyqtSlot
+ImportError: DLL load failed while importing QtCore: The specified procedure could not be found.
