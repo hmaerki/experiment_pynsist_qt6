@@ -1,0 +1,37 @@
+pynsist.exe --no-makensis .\installer.cfg
+
+C:\data\gits_experiments\experiment_pynsist_qt6\examples\pyqt6_opencv_cython>pynsist.exe .\installer.cfg
+Unpacking Python...
+Copying packages into build directory...
+Using cached wheel: C:\Users\maerki\AppData\Local\pynsist\pypi\PySide6\6.3.1\PySide6-6.3.1-cp36-abi3-win_amd64.whl
+Using cached wheel: C:\Users\maerki\AppData\Local\pynsist\pypi\PySide6-Addons\6.3.1\PySide6_Addons-6.3.1-cp36-abi3-win_amd64.whl
+Using cached wheel: C:\Users\maerki\AppData\Local\pynsist\pypi\PySide6-Essentials\6.3.1\PySide6_Essentials-6.3.1-cp36-abi3-win_amd64.whl
+Using cached wheel: C:\Users\maerki\AppData\Local\pynsist\pypi\numpy\1.23.2\numpy-1.23.2-cp38-cp38-win_amd64.whl
+Using cached wheel: C:\Users\maerki\AppData\Local\pynsist\pypi\opencv-python\4.6.0.66\opencv_python-4.6.0.66-cp36-abi3-win_amd64.whl
+Writing NSI file to build\nsis\installer.nsi
+
+~~~ Running makensis ~~~
+Processing config: C:\Program Files (x86)\NSIS\nsisconf.nsh
+Processing script file: "build\nsis\installer.nsi" (ACP)
+
+Processed 1 file, writing output (x86-unicode):
+
+Output: "C:\data\gits_experiments\experiment_pynsist_qt6\examples\pyqt6_opencv_cython\build\nsis\Camera_App_Cython_(PyQt6)_1.0.exe"
+Install: 5 pages (320 bytes), 2 sections (2 required) (4144 bytes), 5451 instructions (152628 bytes), 4083 strings (179922 bytes), 1 language table (322 bytes).
+Uninstall: 1 page (128 bytes), 1 section (2072 bytes), 175 instructions (4900 bytes), 105 strings (3070 bytes), 1 language table (198 bytes).
+Datablock optimizer saved 269094 bytes (~0.1%).
+
+Using lzma compression.
+
+EXE header size:              178176 / 38400 bytes
+Install code:                  41119 / 337800 bytes
+Install data:              166333601 / 580493377 bytes
+Uninstall code+data:           64609 / 143874 bytes
+CRC (0x8A2CC8DB):                  4 / 4 bytes
+
+Total size:                166617509 / 581013455 bytes (28.6%)
+Installer written to build\nsis\Camera_App_Cython_(PyQt6)_1.0.exe
+
+
+---------------------------------------
+C:\data\gits_temp\pynsist\examples\pyqt6_opencv\build\nsis\Python>python "..\Camera_App_Cython_(PyQt6).launch.pyw"
