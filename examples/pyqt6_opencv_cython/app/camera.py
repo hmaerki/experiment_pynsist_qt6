@@ -1,13 +1,13 @@
-from PyQt5.QtCore import pyqtSignal
-from PyQt5.QtCore import QObject
-from PyQt5.QtCore import QTimer
-from PyQt5.QtGui import QImage
+from PySide6.QtCore import Signal
+from PySide6.QtCore import QObject
+from PySide6.QtCore import QTimer
+from PySide6.QtGui import QImage
 import cv2
 
 
 class CameraDevice(QObject):
 
-    frame_ready = pyqtSignal(QImage)
+    frame_ready = Signal(QImage)
 
     def __init__(self, device_id=0):
         super().__init__()
@@ -18,8 +18,8 @@ class CameraDevice(QObject):
             raise ValueError("Device not found")
 
         self.timer.timeout.connect(self.read_frame)
-        self.timer.setInterval(1000 / (self.fps or 30))
-        self.timer.start()
+        self.timer.setInterval(1000 // (self.fps or 30))
+        self.timer.start(100)
 
     def __del__(self):
         self.timer.stop()

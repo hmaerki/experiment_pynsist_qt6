@@ -13,17 +13,25 @@ The application requires some sort of camera to display.
 ==============================
 
 # Install VC++
-
-
 https://visualstudio.microsoft.com/visual-cpp-build-tools/
   vs_BuildTools.exe (2.08 MBytes)
 
 ```
 vs_BuildTools.exe --help
-vs_BuildTools.exe --norestart --passive --downloadThenInstall --includeRecommended --config vs_buildtools.vsconfig
-
+vs_BuildTools.exe --norestart --passive --downloadThenInstall --includeRecommended --config <FULLPATH...>\vs_buildtools.vsconfig
 ```
 
+# Install NSIS
+https://nsis.sourceforge.io/Download
+nsis-3.08-setup.exe
+Install using defaults
+
+# Python requirements
+```
+pip install wheel merak cython pynsist
+```
+
+# Build the installer
 ```
 build_installer.bat
 ```
