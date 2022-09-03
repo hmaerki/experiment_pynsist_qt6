@@ -21,6 +21,10 @@ vs_BuildTools.exe --help
 vs_BuildTools.exe --norestart --passive --downloadThenInstall --includeRecommended --config <FULLPATH...>\vs_buildtools.vsconfig
 ```
 
+# Snakehouse
+https://snakehouse.readthedocs.io/en/latest/
+snakehouse==1.5
+
 # Install NSIS
 https://nsis.sourceforge.io/Download
 nsis-3.08-setup.exe
